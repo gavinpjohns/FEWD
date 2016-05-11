@@ -155,9 +155,22 @@ body::-webkit-scrollbar {
     /*display: none; */
 }
 
-html {
-    background:#fff;
-    
+
+html.home {
+background: -webkit-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: -moz-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: -o-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%;)
+background: -ms-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: linear-gradient(54deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+background-size: 100% 100%;
+-webkit-animation: gradients 41s ease infinite;
+-moz-animation: gradients 41s ease infinite;
+-o-animation: gradients 41s ease infinite;
+-ms-animation: gradients 41s ease infinite;
+animation: gradients 41s ease infinite;
+
 }
 
 linearGradient {
@@ -166,11 +179,26 @@ linearGradient {
 
 body {
     position: absolute;
-    background:#fff;
     width:100%;
     -webkit-font-smoothing:antialiased;
     overflow-x: hidden;
 } 
+
+body.home {
+background: -webkit-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: -moz-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: -o-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%;)
+background: -ms-linear-gradient(70deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+background: linear-gradient(54deg, #5500E0 0%, #FF00A9 50%, #FFDD00 100%);
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+background-size: 100% 100%;
+-webkit-animation: gradients 41s ease infinite;
+-moz-animation: gradients 41s ease infinite;
+-o-animation: gradients 41s ease infinite;
+-ms-animation: gradients 41s ease infinite;
+animation: gradients 41s ease infinite;
+}
 
 h1, h2, h3, h4, h5, h6 {
     margin:0;
@@ -292,13 +320,29 @@ h2 div.copy {
 HEADER
 */
 
+header.home {
+    background: -webkit-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: -moz-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: -o-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%;)
+background: -ms-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: linear-gradient(54deg, #D76D8E 0%, #2CEEEA 100%);
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+background-size: 100% 100%;
+-webkit-animation: gradients 41s ease infinite;
+-moz-animation: gradients 41s ease infinite;
+-o-animation: gradients 41s ease infinite;
+-ms-animation: gradients 41s ease infinite;
+animation: gradients 41s ease infinite;
+}
+
 header#header.sticky {
     position: fixed;
     width: 100%;
     height: auto;
     left: 0;
     z-index: 10;
-    background: #fff;
+
     /*padding-bottom: 2vw;*/
 }
 
@@ -445,8 +489,22 @@ header#header {
     width: 100%;
     left: 0;
     z-index: 10;
-    background: #fff;
     float: left;
+}
+header.home {
+    background: -webkit-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: -moz-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: -o-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%;)
+background: -ms-linear-gradient(70deg, #D76D8E 0%, #2CEEEA 100%);
+background: linear-gradient(54deg, #D76D8E 0%, #2CEEEA 100%);
+-webkit-background-size: 100% 100%;
+-moz-background-size: 100% 100%;
+background-size: 100% 100%;
+-webkit-animation: gradients 41s ease infinite;
+-moz-animation: gradients 41s ease infinite;
+-o-animation: gradients 41s ease infinite;
+-ms-animation: gradients 41s ease infinite;
+animation: gradients 41s ease infinite;
 }
 
 .wrapper {
@@ -657,7 +715,7 @@ footer#footer {
     bottom: 0;
     width: 100%;
     z-index: 10;
-    background: #fff;
+ 
 }
 
 footer#footer div.wrapper {
@@ -750,6 +808,7 @@ dt.session {
     -ms-user-select: none;
     user-select: none;
 }
+
 
 section#hw dt div.copy {
     text-transform: none;
@@ -849,14 +908,14 @@ form input#submit {
     padding: 10px 1%;
     margin: 0;
     background: #000;
-    color: #fff;
+  
     outline: none;
     cursor: url('../img/cursor-pointer.png'), pointer;
     border-bottom: none;
 }
 
 form input#submit:hover {
-    background: #fff;
+
     color: #000;
     outline: 1px solid #000;
 }
@@ -871,6 +930,8 @@ label {
 /*
  * hw
  */
+
+
 
 section#hw blockquote {
     margin: 0;
@@ -889,6 +950,7 @@ section#hw article p a {
     -o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
 
 /*
  * speakers
@@ -1230,7 +1292,7 @@ section#location dl dd img {
         left: 0;
         height: 14vw;
         z-index: 1000;
-        background: #fff;
+
         width: 100%;
     }
 
