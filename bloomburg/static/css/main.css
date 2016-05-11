@@ -1,0 +1,1566 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #000;
+}
+
+body {
+    font-size: 1;
+    line-height: 120%;
+    color: #000;
+    cursor: url('../img/cursor-default.png'), auto;
+}
+
+div.3d {
+    -webkit-transition: translate3d(0,0,0);
+}
+
+p {
+    margin: 2vw 0 4vw;
+    line-height: 100%;
+    font-size: 2vw;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #aaa;
+    text-shadow: none;
+}
+
+::selection {
+    background: #aaa;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    float:left;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    display: block;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* BBW WEBFONT DEFINITIONS */
+
+@font-face {
+  font-family: 'BloombergLBold';
+    src: url("http://www.businessweek.com/assets/type/bloombergl_heavy.eot?#iefix") format('embedded-opentype'),
+       url('http://www.businessweek.com/assets/type/bloombergl_heavy.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+  font-family:'BWHaasHead';
+  src: url('../fonts/bwhaasgroteskhead-95black.eot?#iefix') format('eot'),
+     url('../fonts/bwhaasgroteskhead-95black.woff') format('woff'),
+     url('../fonts/bwhaasgroteskhead-95black.ttf') format('truetype');
+
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family:'BWHaasHead75Bold';
+  src: url('http://www.businessweek.com/assets/type/hinted/haas75/bwhaasgroteskhead-75bold.eot?#iefix') format('eot'),
+     url('http://www.businessweek.com/assets/type/hinted/haas75/bwhaasgroteskhead-75bold.woff') format('woff'),
+     url('http://www.businessweek.com/assets/type/haas75/bwhaasgrotesktext-75bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family:'BWHaasRegular';
+  src: url('../fonts/bwhaasgroteskhead-65medium.eot?#iefix') format('eot'),
+     url('../fonts/bwhaasgroteskhead-65medium.woff') format('woff'),
+     url('../fonts/bwhaasgrotesktext-65medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family:'BWHaas55';
+  src: url('../fonts/NeueHaasGrotDisp-55Roman-Web.eot?#iefix') format('eot'),
+     url('../fonts/NeueHaasGrotDisp-55Roman-Web.woff') format('woff'),
+     url('../fonts/NeueHaasGrotDisp-55Roman-Web.ttf') format('truetype');
+}
+
+/* ==========================================================================
+   custom styles
+   ========================================================================== */
+
+body::-webkit-scrollbar { 
+    /*display: none; */
+}
+
+html {
+    background:#fff;
+}
+
+body {
+    position: absolute;
+    background:#fff;
+    width:100%;
+    -webkit-font-smoothing:antialiased;
+    overflow-x: hidden;
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+}
+
+ul {
+    margin: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #000;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.left {
+    position: relative;
+    float: left;
+}
+
+.right {
+    position: relative;
+    float: right;
+}
+
+div, li, a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+h1, h2, h3, h4, h5 {font-weight: bold; font-family:BWHaasHead; margin: 0; display: block;}
+h1 {font-size: 1rem;line-height: 0.6rem;}
+h2 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+h3 {font-size: 1.2rem;line-height: 1.1rem;}
+
+.verticallyCentered {
+    top: 50% !important;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.bigDot {
+    position: absolute;
+    display: inline;
+    font-size: 22vw;
+    line-height: 0;
+    height: 3vw;
+    margin-top: 3vw;
+    margin-left: -1vw;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
+
+    cursor: url('../img/cursor-pointer.png'), pointer; 
+}
+
+h2 .bigDot {
+    margin-top: 3.1vw;
+    margin-right: 1vw;
+}
+
+dt .bigDot {
+    margin-top: 3.2vw;
+    font-size: 24vw;
+}
+
+dd .bigDot {
+    font-size: 24vw;
+}
+
+.marquee .bigDot {
+    position: relative;
+    float: left;
+    margin: 0 0.5vw;
+    font-size: 4.6vw;
+    height: 1.4vw;
+    line-height: 1.4vw;
+}
+
+.marquee div {
+    position: relative;
+    float: left;
+    height: 1.4vw;
+    line-height: 1.4vw;
+}
+
+div.copy {
+    margin-left: 7.5vw;
+}
+
+div.copy.single {
+
+}
+
+h2 div.copy {
+    margin-left: 6.5vw;
+}
+
+/*
+HEADER
+*/
+
+header#header.sticky {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    /*padding-bottom: 2vw;*/
+}
+
+header#header.sticky .wrapper {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-top: 2vw;
+    height: 10vw;
+}
+
+header#header.sticky nav a {
+    color: #000 !important;
+    list-style: none;
+    font-size: 1.8vw;
+    font-family: BWHaas55;
+    line-height: 100%;
+}
+
+header#header.sticky nav a, nav a:visited {
+    text-decoration:none;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+}
+
+header#header.sticky nav {
+    position: relative;
+    float: right;
+}
+
+header#header.sticky nav ul {
+    cursor: url('../img/cursor-pointer.png'), pointer;
+    width: 8vw;
+    text-align: left;
+    line-height: 100%;
+}
+
+
+
+header#header.sticky nav ul li.last {
+    margin-right: 0;
+}
+
+header#header.sticky ul, header#header.sticky li, nav ul, nav li {
+    padding:0;
+    margin:0;
+}
+
+header#header.sticky div#info {
+    position: relative;
+}
+
+header#header.sticky div#logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+    float: left;
+}
+
+header#header.sticky div#logo h1 {
+    font-size: 3vw;
+    line-height: 80%;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+header#header.sticky div#datetime {
+    position: relative;
+    margin-left: 20px;
+    float: left;
+    margin-top: 2px;
+    clear: none;
+}
+
+header#header.sticky div#datetime h2 {
+    font-size: 2.4vw;
+    margin: 0;
+    line-height: 100%;
+    color: #000;
+    font-family: BWHaas55;
+    font-weight: 100;
+}
+
+header#header.sticky div#countdown {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    font-size: 1vw;
+    line-height: 100%;
+    width: 15%;
+    left: 0;
+}
+
+header#header.sticky div#countdown div {
+    text-transform: uppercase;
+}
+
+header#header.sticky div#countdown div.time {
+    margin: 0 10px 7px 0;
+    position: relative;
+    float: left;
+    width: 5vw;
+}
+
+header#header.sticky #featuring {
+    display: none;
+}
+
+header#header.sticky #hashtag {
+    display: none;
+}
+
+header#header.sticky #sponsors {
+    display: block;
+    position: absolute;
+    left: 115vw;
+    zoom: 50%;
+    -moz-transform: scale(0.5);
+    width: 25%;
+    top: 0;
+}
+
+header#header.sticky #sponsors div {
+    margin: 0 2vw 2vw 1vw;
+}
+
+header#header.sticky #sponsors div:first-child {
+    width: 100%;
+}
+
+header#header.sticky .marquee:first-child {
+    display: none !important;
+}
+
+header#header.sticky .marquee {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+header#header {
+    position: relative;
+    height: 50vw;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+    float: left;
+}
+
+.wrapper {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    margin: 2vw auto;
+}
+
+article {
+    position: relative;
+    width: 95%;
+    margin: auto;
+}
+
+header nav a {
+    color: #000 !important;
+    list-style: none;
+    font-size: 3.5vw;
+    font-family: BWHaas55;
+    line-height: 100%;
+}
+
+nav a, nav a:visited {
+    text-decoration:none;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+}
+
+header nav {
+    position: absolute;
+    right: -1vw;
+}
+
+header nav ul {
+    cursor: url('../img/cursor-pointer.png'), pointer;
+    text-align: left;
+    line-height: 100%;
+}
+
+header nav ul li {
+    
+}
+
+header nav ul li.last {
+    margin-right: 0;
+}
+
+header ul, header li, nav ul, nav li {
+    padding:0;
+    margin:0;
+}
+
+header div#info {
+    position: relative;
+}
+
+header div#logo {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    margin-bottom: 1vw;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+}
+
+header div#logo h1 {
+    font-size: 8.5vw;
+    line-height: 80%;
+    color: #000;
+    letter-spacing: -1px;
+}
+
+header div#datetime {
+    position: relative;
+    float: left;
+    clear: both;
+    margin-top: 2vw;
+}
+
+header div#datetime h2 {
+    font-size: 6.5vw;
+    margin: 0;
+    line-height: 98%;
+    color: #000;
+    font-family: BWHaas55;
+    font-weight: 100;
+}
+
+header div#countdown {
+    position: absolute;
+    top: 0;
+    font-size: 1.5vw;
+    line-height: 120%;
+    width: 20vw;
+    left: 60vw;
+}
+
+header div#countdown div {
+    text-transform: uppercase;
+}
+
+header div#countdown div.time {
+    margin: 0 7% 7% 0;
+    position: relative;
+    float: left;
+    width: 8vw;
+}
+
+header div#countdown div.time:last-child {
+    margin-bottom: 0;
+}
+
+header div#hashtag {
+    text-transform: uppercase;
+    font-size: 4.3vw;
+    position: absolute;
+    right: 0vw;
+    top: 16vw;
+    line-height: 4.6vw;
+}
+
+header div#featuring {
+    font-size: 4.5vw;
+    position: absolute;
+    right: -1vw;
+    top: 33vw;
+    text-align: right;
+    line-height: 95%;
+}
+
+header div#featuring div#speaker {
+    font-size: 3.75vw;
+    right: 1vw;
+    position: relative;
+    margin-top: 0.5vw;
+}
+
+.bigtext > div {
+    line-height: 0.95em;
+}
+
+.marquee {
+    opacity: 0;
+    margin: 0 0 1vw;
+    font-size: 1.4vw;
+    width: 200%;
+    height: 1.5vw;
+    position: relative;
+    cursor: url('../img/cursor-buy.png'), pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.marquee .bigDot {
+    position: relative;
+    float: left;
+    margin: 0 0.5vw;
+    font-size: 5vw;
+    height: 1vw;
+    line-height: 2vw;
+}
+
+.marquee div {
+    position: relative;
+    float: left;
+    height: 1vw;
+    line-height: 2vw;
+}
+
+header#header.locked {
+    position: relative;
+    height: 100vw;
+}
+
+header #sponsors {
+    position: relative;
+    font-size: 2.5vw;
+    height: 2.5vw;
+    clear: both;
+    top: 1vw;
+}
+
+header #sponsors div {
+    float: left;
+    margin-left: 2vw;
+    line-height: 100%;
+}
+
+header #sponsors div:first-child {
+    margin-left: 0;
+}
+
+header #sponsors div img {
+    height: 2.5vw;
+}
+
+/*
+ * Footer
+ */
+
+footer#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+}
+
+footer#footer div.wrapper {
+    position: relative;
+    width: 95%;
+    margin: 15px auto;
+    padding-bottom: 25px;
+}
+
+footer#footer ul {
+
+}
+
+footer#footer ul li:first-child {
+    border:none;
+}
+
+footer#footer ul li {
+    display: inline;
+    list-style: none;
+    font-size: .7rem !important;
+    text-transform: uppercase;
+}
+
+footer#footer ul li a {
+    color: #000;
+}
+
+footer img {
+    vertical-align: top;
+}
+
+footer #att {
+    width: 35px;
+    margin-left: 15px;
+}
+
+footer #cadillac {
+    width: 60px;
+    margin-left: 25px;
+}
+
+footer #qualcomm {
+    width: 135px;
+    margin-left: 15px;
+}
+
+/*
+ * Main
+ */
+
+article {
+    outline: 0;
+}
+
+article h2 {
+    font-size: 7vw;
+    line-height: 100%;
+    font-family: BWHaas55;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+    clear: both;
+}
+
+blockquote p {
+    font-family: arial;
+    font-size: 1.2rem;
+    margin: 0 !important;
+}
+
+dl {
+    margin: 0;
+    height: 0;
+    line-height: 100%;
+    display: none;
+}
+
+dt {
+    font-size: 6vw;
+    line-height: 6vw;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+}
+
+dt.session {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section#about dt div.copy {
+    text-transform: none;
+}
+
+dt div.copy {
+    text-transform: uppercase;
+}
+
+dd {
+    min-height: 5vw;
+    margin: 0;
+    height: 0;
+    font-size: 2.2vw;
+    line-height: 2.6vw;
+    display: none;
+}
+
+dd div.copy img {
+    width: 30%;
+}
+
+dd div.copy {
+    min-height: 3vw;
+    /*letter-spacing: -1px;*/
+}
+
+dd div.copy p.bio {
+    font-size: inherit;
+    line-height: inherit;
+    margin-top: 1vw;
+}
+
+#container {
+    padding-top: 52.8vw;
+}
+
+/*
+ * form
+ */
+
+section#form {
+}
+
+section#form article {
+    width: 88%;
+    padding: 5vw 0;
+}
+
+section#form article p {
+    font-family: BWHaas55;
+    font-size: 12vw;
+    line-height: 88%;
+}
+
+form {
+    position: relative;
+    height: 50px;
+    padding: 30px 0;
+}
+
+form input {
+    border-radius: 0;
+    padding: 10px 0%;
+    width: 30%;
+    margin-right: 30px;
+    border: 0;
+    outline: 0;
+    color: #000;
+    outline-offset: initial;
+    float: left;
+    display: inline-block;
+    font-size: 2.5vw;
+    text-align: left;
+    cursor: url('../img/cursor-default.png'), auto;
+    border-bottom: 3px solid #000;
+}
+
+form input::-webkit-input-placeholder {
+   color: #000;
+}
+
+form input:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+}
+
+form input::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;
+}
+
+form input:-ms-input-placeholder {  
+   color: #000;
+}
+
+form input#submit {
+    width: 25%;
+    padding: 10px 1%;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    outline: none;
+    cursor: url('../img/cursor-pointer.png'), pointer;
+    border-bottom: none;
+}
+
+form input#submit:hover {
+    background: #fff;
+    color: #000;
+    outline: 1px solid #000;
+}
+
+label {
+    display: block;
+    position: absolute;
+    bottom: -2vw;
+    left: 0;
+}
+
+/*
+ * about
+ */
+
+section#about blockquote {
+    margin: 0;
+}
+
+section#about article p {
+    font-family: BWHaas55;
+    font-size: 3.5vw;
+}
+
+section#about article p a {
+    color: #007EFF;
+
+    -webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/*
+ * speakers
+ */
+
+div.speaker {
+    display: none;
+}
+
+section#speakers dd.social div.copy, section#speakers dd.social div.copy a {
+    font-size: 3.3vw;
+    line-height: 150%;
+}
+
+section#speakers dd.social div.copy a {
+    font-size: 3.3vw;
+}
+
+section#speakers dd.title div.bigDot {
+    /*margin-top: 1.7vw;*/
+}
+
+section#speakers dd.title div.copy {
+    font-size: 5vw;
+    margin-top: 1vw;
+    line-height: 100%;
+}
+
+section#speakers p.session-info {
+    font-style: italic;
+    font-size: 65%;
+}
+
+/*
+ * Schedule
+ */
+
+section#schedule dd div.bigDot {
+    margin-top:3vw;
+}
+
+div.colon {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+section#schedule dd.active div.copy div {
+    display: inline !important;    
+}
+
+/*
+ * Location
+ */
+
+section#location dt div.copy {
+    /*font-size: 3.5vw;*/
+    text-transform: none;
+}
+
+section#location dd {
+    margin: 0 0 2vw 8vw !important;
+}
+
+section#location dd div.bigDot {
+    
+}
+
+section#location dl dd img {
+    width: 70%;
+}
+
+#map div {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    pointer-events: none;
+/*    width: 37vw;
+    height: 17vw;*/
+    overflow: hidden;
+    margin: 2vw 0;
+}
+
+#map {
+    top: -3.5vw;
+    position: relative;
+}
+
+#map div iframe {
+/*    transform: translateX(-10vw);
+    transform: translateY(-10vw);*/
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    zoom: 1;
+}
+
+/*
+@media only screen and (max-width: 925px) {
+    html {
+        font-size: 75% !important;
+    }
+
+    #content {
+        top: -60px;
+    }
+
+    header#header .wrapper {
+        position: relative !important;
+        margin: 30px auto !important;
+    }
+
+    article#intro {
+        margin-left: -5px !important;
+    }
+
+    article#intro h3 {
+        font-size: 1.9rem !important;
+    }
+
+    header#header .wrapper, #environment, footer#footer div.wrapper {
+        width: 93% !important;
+    }
+
+    header div#buytickets button {
+        width: 180px !important;
+    }
+
+    header#header div#hashtag {
+        
+    }
+
+    form#mailChimp {
+        margin-top: -15px;
+        padding-bottom: 30px;
+    }
+
+    form#mailChimp input {
+        border-radius: 0 !important;
+        margin-right: 15px !important;
+    }
+
+    label {
+        top: 50px;
+        right: 50px;
+    }
+}
+*/
+
+@media only screen and (max-width: 736px) {
+
+    header#header {
+        margin-top: 8vw;
+        height: 100%;
+        z-index: 100;
+    }
+
+    .wrapper {
+        width: 90%;
+        height: 142vw;
+    }
+
+    header div#logo {
+        top: 27vw;
+    }    
+
+    header div#logo h1 {
+        font-size: 13vw;
+        line-height: 80%;
+        color: #000;
+        letter-spacing: 0;
+    }
+
+    header div#datetime {
+        top: 27vw;
+        margin-bottom: 30px;
+    }
+
+    header div#datetime h2 {
+        font-size: 9.5vw;
+        line-height: 100%;
+        letter-spacing: 0.5px;
+    }
+
+    header div#countdown {
+        left: 1vw;
+        width: 100%;
+        top: 90vw;
+        font-size: 3vw;
+    }
+
+    header div#countdown div.time {
+        width: 40px;
+    }
+
+    header div#countdown div.time:last-child {
+        margin-right: 0;
+    }
+
+    header div#hashtag {
+        top: 13vw;
+        font-size: 11vw;
+        left:0;
+    }
+
+    header div#hashtag span {
+        font-size:11.4vw;
+    }
+
+    header div#featuring {
+        display: none;
+    }
+
+    header div#buy {
+        position: absolute;
+        top: 115vw;
+        font-size: 50px;
+    }
+
+    header div#sponsors {
+        font-size: 15px;
+        top: 55vw;
+    }
+
+    header div#sponsors div:first-child {
+        width: 100%;
+    }
+
+    header div#sponsors div {
+        top: -60px;
+        position: relative;
+        float: left;
+        width: 28% !important;
+    }
+
+    header div#sponsors div img {
+        height: 20px;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 14vw;
+        z-index: 1000;
+        background: #fff;
+        width: 100%;
+    }
+
+    nav .marquee {
+        top: 10.5vw;
+        left: 1.5vw;
+        width: 100%;
+        position: absolute;
+        margin: 0;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 2vw;
+        left: 4vw;
+    }    
+
+    nav ul li {
+        float: left;
+        margin-right: 11vw;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+    }
+
+    footer#footer {
+        position: relative !important;
+        bottom: -40px !important;
+        height: 10px;
+    }
+
+    footer#footer div.wrapper {
+        height: 10px;
+    }
+
+    footer#footer .right {
+        margin: 50px 0;
+        float: left;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    form input {
+        clear: both !important;
+        width: 98% !important;
+        border-radius: 0 !important;
+        margin-bottom: 10px !important;
+        text-align: left;
+        padding: 10px 0% 10px 2%;
+    }
+
+    form input#submit {
+        width: 100% !important;
+        text-align: left;
+        padding: 10px 0% 10px 2%;
+    }  
+
+    #container {
+        position: relative;
+        /*top: 20px;*/
+        padding: 0;
+        z-index: 11;
+    }
+
+    section#form article {
+        padding: 0;
+    }
+
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        height: 3.8vw;
+        margin: 3vw 0;
+        margin-left: 1.5vw;
+    }
+
+    .marquee div {
+        zoom: 200%;
+        -moz-transform: scale(2);
+        line-height: 150%;
+        height: 3vw;
+    }
+
+    section {
+
+    }
+
+    dd {
+        /*margin: 20px;*/
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    dd div.copy img {
+        width: 65%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #map div iframe {
+        width: 65vw;
+        height: 40vw;
+    }
+
+    label {
+        display: block;
+        position: absolute;
+        bottom: 18vw;
+        left: 0.5vw;
+        font-size: 10px;
+    }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*
+ * Firefox
+*/
+
+body.firefox {
+
+}
+
+body.firefox .marquee .bigDot {
+    line-height: 2.6vw;
+}
+
+body.firefox dt .bigDot {
+    margin-top: 4.6vw;
+}
+
+body.firefox section#schedule dd div.bigDot {
+    margin-top: 4.5vw;
+}
+
+body.firefox header#header.sticky #sponsors {
+    display: block;
+    position: absolute;
+    left: 45vw;
+    transform: scale(0.5);
+    width: 45%;
+    top: -1vw;
+}
+
+body.firefox header#header nav ul li div.bigDot.active {
+    font-size: 12vw;
+    margin-left: -3.9vw;
+    margin-top: 1vw;
+}
+
+body.firefox header#header nav ul li div.bigDot.hover {
+    font-size: 12vw;
+    margin-left: -3.9vw;
+    margin-top: 1vw;
+}
+
+body.firefox header#header.sticky nav ul li div.bigDot {
+    font-size: 3.5vw;
+    margin-left: -2.3vw;
+    margin-top: -0.2vw;
+}
+
+body.firefox header#header.sticky nav ul li div.bigDot.hover {
+    font-size: 7vw;
+    margin-top: 0.4vw;
+    margin-left: -2.48vw;
+}
+
+body.firefox header#header.sticky nav ul li div.bigDot.active {
+    font-size: 7vw;
+    margin-top: 0.4vw;
+    margin-left: -2.48vw;
+}
+
+/*
+ * IE
+*/
+
+body.msie header#header.sticky #sponsors {
+    left: 58vw;
+    width:45%;
+}
+
+body.msie header#header nav ul li div.bigDot.active {
+    font-size: 10vw;
+    margin-left: -3.4vw;
+    margin-top: 0.4vw;
+}
+
+body.msie header#header nav ul li div.bigDot.hover {
+    font-size: 10vw;
+    margin-left: -3.4vw;
+    margin-top: 0.4vw;
+}
+
+body.msie header#header.sticky nav ul li div.bigDot.hover {
+    font-size: 6vw;
+    margin-top: -0.2vw;
+    margin-left: -2vw;
+}
+
+body.msie header#header.sticky nav ul li div.bigDot.active {
+    font-size: 6vw;
+    margin-top: -0.2vw;
+    margin-left: -2vw;
+}
+
+/*
+ * iPad
+*/
+
+body.ipad header#header nav ul li div.bigDot {
+    font-size: 2.7vw;
+    margin-left: -2.95vw;
+    margin-top: 0.2vw;
+    line-height: 3vw;
+}
+
+body.ipad header#header nav ul li div.bigDot.active {
+    font-size: 10vw;
+    margin-left: -3.4vw;
+    margin-top: 0.4vw;
+}
+
+body.ipad header#header nav ul li div.bigDot.hover {
+    font-size: 10vw;
+    margin-left: -3.4vw;
+    margin-top: 0.4vw;
+}
+
+body.ipad header#header.sticky nav ul li div.bigDot {
+    font-size: 1.65vw;
+    margin-left: -1.75vw;
+    margin-top: -0.25vw;
+    line-height: 3vw;
+}
+
+body.ipad.landscape header#header.sticky nav ul li div.bigDot {
+    font-size: 1.65vw;
+    margin-left: -1.75vw;
+    margin-top: -0.25vw;
+    line-height: 2vw;
+}
+
+body.ipad header#header.sticky nav ul li div.bigDot.hover {
+    font-size: 6vw;
+    margin-top: -0.2vw;
+    margin-left: -2vw;
+}
+
+body.ipad header#header.sticky nav ul li div.bigDot.active {
+    font-size: 6vw;
+    margin-top: -0.2vw;
+    margin-left: -2vw;
+}
+
+body.ipad header div#featuring div#speaker {
+    font-size: 3.7vw;
+}
