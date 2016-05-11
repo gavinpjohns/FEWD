@@ -1,5 +1,5 @@
 body {
-	background: beige;
+	background: ;
 }
 
 
@@ -9,7 +9,7 @@ body {
 	max-width: 80%;
 }
 
-.banner {
+.hero {
 	display: block;
 	width: 100%;
 }
@@ -22,5 +22,9 @@ list-style: none;
 
 a {
 text-decoration: none;
-font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+font-family: courier,georgia,"times new roman",times,serif;
+}
+
+p {
+font-family: georgia
 }

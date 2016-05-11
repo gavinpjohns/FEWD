@@ -1,0 +1,115 @@
+/* Reset */
+/* ------------------------ */
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
+
+
+
+/* Layout */
+/* ------------------------ */
+body {
+	background-color: #444444;
+	color: #FFFFFF;
+	padding: 40px;
+	margin: 40px;
+	border: 2px solid  #878787;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	border-top: 2px solid #878787;
+	border-bottom: 2px solid #878787;
+	padding: 40px 0;
+	margin: 40px;
+	overflow: hidden;
+}
+
+footer {
+	text-align: center;
+}
+
+
+.title-name {
+	font-size: 36px;
+	font-style: italic;
+
+}
+
+li {
+	display: inline;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+
+
+/* Headings */
+/* ------------------------ */
+
+h1,
+li {
+	font-family: Arial;
+}
+
+h2 {
+	margin-bottom: 15px;
+	font-family: Arial;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #999999;
+	font-family: Arial;
+	font-size: 14px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+h4 {
+	font-family: Arial;
+}
+
+
+/* Navigation Lists */
+/* ------------------------ */
+
+
+
+/* Links */
+/* ------------------------ */
+
+a {
+	color: #23D39E;
+}
+
+/* About Me page */
+/* ------------------------ */
+
+
+
+/* Resume page */
+/* ------------------------ */
+
+img {
+	float: right;
+	padding: 5px;
+	border: 2px solid #878787;
+	margin: 0 0 20px 10px;
+
+}
+
+
+
+/* Resume page - Experience */
+/* ------------------------ */
