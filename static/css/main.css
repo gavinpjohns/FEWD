@@ -209,10 +209,18 @@ ul {
     margin: 0;
 }
 
-a, a:visited {
+article, a {
     text-decoration: none;
-    color: #000;
+    font-family: BWHaas55;
+    font-size: 8vw;
+    padding: .4em;
+    color: black;
     cursor: url('../img/cursor-pointer.png'), pointer;
+    text-transform: uppercase;
+
+}
+.smalllink {
+    font-size: 2.5vw;
 }
 
 a:hover, a:active, a:focus {
@@ -342,7 +350,7 @@ header#header.sticky {
     height: auto;
     left: 0;
     z-index: 10;
-
+    background-color: white;
     /*padding-bottom: 2vw;*/
 }
 
@@ -736,12 +744,12 @@ footer#footer ul li:first-child {
 footer#footer ul li {
     display: inline;
     list-style: none;
-    font-size: .7rem !important;
+    font-size: .7vw !important;
     text-transform: uppercase;
 }
 
 footer#footer ul li a {
-    color: #000;
+    color: #fff;
 }
 
 footer img {
@@ -937,19 +945,17 @@ section#hw blockquote {
     margin: 0;
 }
 
-section#hw article p {
+section#hw article {
     font-family: BWHaas55;
     font-size: 3.5vw;
-}
-
-section#hw article p a {
-    color: #007EFF;
-
+    color: white;
     -webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+
 
 
 /*
