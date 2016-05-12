@@ -948,7 +948,6 @@ section#hw blockquote {
 section#hw article {
     font-family: BWHaas55;
     font-size: 3.5vw;
-    color: white;
     -webkit-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 100ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -1212,7 +1211,7 @@ section#location dl dd img {
 
     .wrapper {
         width: 90%;
-        height: 142vw;
+        height: 80vw;
     }
 
     header div#logo {
