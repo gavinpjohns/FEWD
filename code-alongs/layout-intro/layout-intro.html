@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout Intro</title>
+</head>
+<body>
+
+<h1>Layout Intro</h1>
+
+
+<!-- Table Layout-->
+<h2>Table Layout</h2>
+<table>
+	<tr>
+		<td>Column 1</td>
+		<td>Column 2</td>
+		<td>Column 3</td>
+	</tr>
+</table>
+
+
+<!-- Float Layout -->
+<h2>Float Layout</h2>
+<header>
+	<div>Column 1</div>	
+	<div>Column 2</div>
+	<div>Column 3</div>	
+</header>
+
+<header class="three-columns">
+	<div>Column 1</div>	
+	<div>Column 2</div>
+	<div>Column 3</div>	
+</header>
+
+
+
+<!-- Flexbox Layout -->
+<h2>Flexbox Layout</h2>
+<main>
+	<section>Column 1</section>	
+	<section>Column 2</section>
+	<section>Column 3</section>	
+</main>
+
+<main class="three-columns">
+	<section>Column 1</section>	
+	<section>Column 2</section>
+	<section>Column 3</section>	
+</main>
+
+
+<!-- Absolute Position -->
+<h2>Absolute Position</h2>
+<footer>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+
+</footer>
+
+
+
+
+
+<!-- CSS -->
+<style>
+
+
+
+	main {
+		display: flex;
+	}
+
+	section {
+		background: rosybrown;
+		color:khaki;
+		padding: 10px;
+
+	}
+
+	header {
+		overflow: hidden;
+	}
+
+	.three-columns section,
+	.three-columns div{
+		width: 33.333333%;
+		text-align: center;
+	}
+
+	div {
+		box-sizing: border-box;
+	}
+
+	div {
+		float: left;
+		background: lightblue;
+		padding: 10px;
+		text-align: center;
+	}
+
+	td {
+		background: beige;
+		padding: 10px;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+/*Absolute Positioning*/
+	footer {
+		background: linear-gradient(45deg, #f85032 0%,#f16f5c 50%,#f6290c 51%,#f02f17 71%,#e73827 100%);
+		height: 200px;
+		width: 100%;
+		position: relative;
+	}
+
+	footer p {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+		bottom: 40px;
+		left: 200px;
+	}
+
+
+</style>
+
+
+</body>
+</html>
