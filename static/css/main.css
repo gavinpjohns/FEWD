@@ -683,7 +683,7 @@ header div#featuring div#speaker {
 .marquee div {
     position: relative;
     float: left;
-    height: 1vw;
+    height: 5vw;
     line-height: 2vw;
 }
 
@@ -713,6 +713,9 @@ header #sponsors div:first-child {
 header #sponsors div img {
     height: 2.5vw;
 }
+
+
+
 
 /*
  * Footer
@@ -749,7 +752,7 @@ footer#footer ul li {
 }
 
 footer#footer ul li a {
-    color: #fff;
+    color: #D3D3D3;
 }
 
 footer img {
@@ -787,6 +790,11 @@ article h2 {
     text-transform: uppercase;
     cursor: url('../img/cursor-pointer.png'), pointer;
     clear: both;
+}
+
+.hwtitle {
+    text-decoration: underline;
+    cursor: url('../img/cursor-default.png'),;
 }
 
 blockquote p {
@@ -854,86 +862,6 @@ dd div.copy p.bio {
     padding-top: 52.8vw;
 }
 
-/*
- * form
- */
-
-section#form {
-}
-
-section#form article {
-    width: 88%;
-    padding: 5vw 0;
-}
-
-section#form article p {
-    font-family: BWHaas55;
-    font-size: 12vw;
-    line-height: 88%;
-}
-
-form {
-    position: relative;
-    height: 50px;
-    padding: 30px 0;
-}
-
-form input {
-    border-radius: 0;
-    padding: 10px 0%;
-    width: 30%;
-    margin-right: 30px;
-    border: 0;
-    outline: 0;
-    color: #000;
-    outline-offset: initial;
-    float: left;
-    display: inline-block;
-    font-size: 2.5vw;
-    text-align: left;
-    cursor: url('../img/cursor-default.png'), auto;
-    border-bottom: 3px solid #000;
-}
-
-form input::-webkit-input-placeholder {
-   color: #000;
-}
-
-form input:-moz-placeholder { /* Firefox 18- */
-   color: #000;
-}
-
-form input::-moz-placeholder {  /* Firefox 19+ */
-   color: #000;
-}
-
-form input:-ms-input-placeholder {  
-   color: #000;
-}
-
-form input#submit {
-    width: 25%;
-    padding: 10px 1%;
-    margin: 0;
-    background: #000;
-  
-    outline: none;
-    cursor: url('../img/cursor-pointer.png'), pointer;
-    border-bottom: none;
-}
-
-form input#submit:hover {
-
-    color: #000;
-    outline: 1px solid #000;
-}
-
-label {
-    display: block;
-    position: absolute;
-    bottom: -2vw;
-    left: 0;
-}
 
 /*
  * hw
@@ -955,98 +883,6 @@ section#hw article {
 }
 
 
-
-
-/*
- * speakers
- */
-
-div.speaker {
-    display: none;
-}
-
-section#speakers dd.social div.copy, section#speakers dd.social div.copy a {
-    font-size: 3.3vw;
-    line-height: 150%;
-}
-
-section#speakers dd.social div.copy a {
-    font-size: 3.3vw;
-}
-
-section#speakers dd.title div.bigDot {
-    /*margin-top: 1.7vw;*/
-}
-
-section#speakers dd.title div.copy {
-    font-size: 5vw;
-    margin-top: 1vw;
-    line-height: 100%;
-}
-
-section#speakers p.session-info {
-    font-style: italic;
-    font-size: 65%;
-}
-
-/*
- * Schedule
- */
-
-section#schedule dd div.bigDot {
-    margin-top:3vw;
-}
-
-div.colon {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-section#schedule dd.active div.copy div {
-    display: inline !important;    
-}
-
-/*
- * Location
- */
-
-section#location dt div.copy {
-    /*font-size: 3.5vw;*/
-    text-transform: none;
-}
-
-section#location dd {
-    margin: 0 0 2vw 8vw !important;
-}
-
-section#location dd div.bigDot {
-    
-}
-
-section#location dl dd img {
-    width: 70%;
-}
-
-#map div {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    pointer-events: none;
-/*    width: 37vw;
-    height: 17vw;*/
-    overflow: hidden;
-    margin: 2vw 0;
-}
-
-#map {
-    top: -3.5vw;
-    position: relative;
-}
-
-#map div iframe {
-/*    transform: translateX(-10vw);
-    transform: translateY(-10vw);*/
-}
 
 /* ==========================================================================
    Helper classes
