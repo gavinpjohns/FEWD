@@ -308,8 +308,8 @@ dd .bigDot {
 .marquee div {
     position: relative;
     float: left;
-    height: 1vw;
-    line-height: 1vw;
+    height: 1.4vw;
+    line-height: 1.4vw;
 }
 
 div.copy {
