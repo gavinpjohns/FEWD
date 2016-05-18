@@ -1,0 +1,98 @@
+/* 
+   ///////////////////////////////////////////
+      RESET 
+   ///////////////////////////////////////////
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+footer,
+p,
+li {
+	border: 1px solid blue;
+	padding: 10px;	
+}
+
+/* 
+   ///////////////////////////////////////////
+      HEADER 
+   ///////////////////////////////////////////
+*/
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 5px;
+}
+
+header ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+header li {
+	margin-left: 5px;
+}
+
+
+/* 
+   ///////////////////////////////////////////
+      MAIN 
+   ///////////////////////////////////////////
+*/
+
+p {
+	height: 100px;
+}
+
+.container{
+	margin: 20px;
+}
+
+main {
+	margin: 20px 0;
+}
+main ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+main li {
+	width: 22%;
+	height: 100px;
+}
+
+
+/* 
+   ///////////////////////////////////////////
+      FOOTER 
+   ///////////////////////////////////////////
+*/
+
+
+footer ul {
+	display: flex;
+}
+
+footer li {
+	flex: 1;
+	height: 150px;
+	margin-right: 30px;
+}
+
+footer li:last-child {
+	margin: 0;
+}
+
+
+
+
+
