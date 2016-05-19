@@ -1,0 +1,107 @@
+/* 
+   ///////////////////////////////////////////
+      RESET 
+   ///////////////////////////////////////////
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 
+   ///////////////////////////////////////////
+      HEADER 
+   ///////////////////////////////////////////
+*/
+
+
+h1 {
+	color: #B66848;
+	font-family: Arial;
+	font-weight: bold; 
+	line-height: 3em;
+}
+
+h2 {
+	color: #B66848;
+	font-size: 16px;
+	font-family: Arial;
+	font-weight: bold; 
+	margin-bottom: 5px;
+	line-height: 3em;
+}
+
+/* 
+   ///////////////////////////////////////////
+      BODY 
+   ///////////////////////////////////////////
+*/
+
+li {
+	font-family: Arial; 
+	font-size: 16px;
+	line-height: 1.35em;
+}
+
+p {
+	font-family: Arial; 
+	font-size: 16px;
+	line-height: 1.35em;
+}
+
+ul, ol {
+	padding-left: 20px;
+	margin-top: 0px;
+}
+
+/* 
+   ///////////////////////////////////////////
+      LAYOUT 
+   ///////////////////////////////////////////
+*/
+
+main {
+	display: flex;
+}
+
+img {
+	width: 100% auto;
+}
+
+.cookie-image {
+	position: relative;
+	width: 100% auto;
+	max-width: 550px;
+}
+
+.info {
+	width: 50px;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.content {
+	flex: 3;
+	background-color: #F0F0D8;
+	padding: 25px;
+}
+
+.sidebar {
+	width: 300px;
+	background-color: #F0D890;
+	padding: 25px;
+}
+
+.prep-time {
+	display: flex;
+}
+
+section {
+	flex:1;
+	text-align: center;
+}
+
+
