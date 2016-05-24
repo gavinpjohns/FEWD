@@ -9,3 +9,88 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* 
+   ///////////////////////////////////////////
+      FONT & COLOR 
+   ///////////////////////////////////////////
+*/
+
+page {
+	max-width: 900px;
+}
+
+h1 {
+	color: yellow;
+}
+
+.quote {
+	font-family: arial;
+	font-style: italic;
+	background: lightgrey;
+	text-align: center;
+	font-size: 20pt;
+	padding: 20px;
+}
+u {
+	color: yellow;
+}
+s {
+	color: white;
+}
+
+/* 
+   ///////////////////////////////////////////
+      NAV 
+   ///////////////////////////////////////////
+*/
+
+ul {
+	display: flex;
+	list-style: none;
+	float: right;
+}
+
+.nav {
+	background: black;
+	border-bottom: solid 3px yellow;
+	padding: 10px;
+	height: 100px;
+
+}
+
+.nav li {
+	color: white;
+	padding: 10px;
+	
+	}
+
+
+
+
+
+/* 
+   ///////////////////////////////////////////
+      HERO & PROMO
+   ///////////////////////////////////////////
+*/
+
+.promo {
+	background: rgba(255,255,255,0.8);
+}
+
+/* 
+   ///////////////////////////////////////////
+      VALUE PROPS 
+   ///////////////////////////////////////////
+*/
+
+
+
+/* 
+   ///////////////////////////////////////////
+      FOOTER 
+   ///////////////////////////////////////////
+*/
+
+
