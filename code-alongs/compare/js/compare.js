@@ -22,7 +22,26 @@ compare.addEventListener('click', compareNumbers);
 function compareNumbers() {
 	
 	var firstValue = firstNumber.value;
-	firstValue = parseInt(firstValue)
+	firstValue = parseInt(firstValue);
 
-	sign.textContent = "=";
+	var secondValue = secondNumber.value;
+	secondValue = parseInt(secondValue);
+
+	//JS Comparison
+
+	if (firstValue > secondValue) {
+		sign.textContent = ">"
+	}
+
+	else if (firstValue < secondValue) {
+		sign.textContent = "<"
+	}
+
+	else if(firstValue = secondValue) {
+		sign.textContent = "="
+	}
+
+
 }
+
+

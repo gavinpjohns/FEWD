@@ -28,10 +28,16 @@ input {
 
 button {
 	font-family: 'Inconsolata';
-	height: 40px;
-	width: 120px;
+	font-size: 1em;
+	line-height: 1em;
+	padding: 10px 30px;
 	margin-top: 10px;
 }
 
-
+.sign {
+	text-align: center;
+	position: relative;
+	font-family: 'Inconsolata';
+	font-size: 2em;
+	padding: 0px 10px;
 }
