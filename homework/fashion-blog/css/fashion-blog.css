@@ -1,0 +1,152 @@
+@import url("reset.css");
+
+/* 
+   ///////////////////////////////////////////
+      FONT & COLOR 
+   ///////////////////////////////////////////
+*/
+
+h1 {
+	color: red
+	font-size: 2em;
+}
+
+.subtitle {
+	display: inline;
+	color: grey;
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1.5em;
+
+}
+
+
+
+/*.post p::first-letter { 
+    font-size: 400%;
+    color: grey;
+
+}*/
+
+
+/* 
+   ///////////////////////////////////////////
+      LAYOUT
+   ///////////////////////////////////////////
+*/
+
+
+
+main {
+	margin: auto;
+	padding: 30px;
+	max-width: 1100px;
+	align-content: center;
+}
+
+header h1{
+	display: inline;
+}
+
+
+header ul {
+	display: flex;
+}
+
+header ul li {
+	flex: 1;
+	text-align: center;
+	justify-content: space-between;
+}
+
+
+
+.page {
+	display: flex;
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+
+
+.feed {
+	flex: 2;
+	
+}
+
+
+
+
+/* 
+   ///////////////////////////////////////////
+      ASIDE
+   ///////////////////////////////////////////
+*/
+
+
+aside {
+	padding: 40px;
+	flex: 1;
+	display: block;
+}
+
+img {
+	width: 100%;
+	position: relative;
+}
+
+.ad {
+	background-color: grey;
+	border: 1px solid black;
+	font-size: 3em;
+	text-align: center;
+	justify-content: space-between;
+	padding: 80px;
+
+}
+
+
+/* 
+   ///////////////////////////////////////////
+      FOOTER
+   ///////////////////////////////////////////
+*/
+
+
+
+footer ul {
+	display: flex;
+}
+
+footer ul li {
+	flex: 1;
+	text-align: center;
+	justify-content: space-between;
+}
+
+	
+/* 
+   ///////////////////////////////////////////
+      RESPONSIVE 
+   ///////////////////////////////////////////
+*/
+
+
+@media (max-width: 800px){
+
+	.page {
+		flex-direction: column;
+	}
+
+	.aside {
+		padding: 0px;
+	}
+
+
+}
+
+
+
+
