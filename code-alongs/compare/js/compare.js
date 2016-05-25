@@ -8,7 +8,21 @@ var compare = document.querySelector(".compare");
 compare.addEventListener('click', compareNumbers);
 
 
+
+
+//Listen for the compare button to be clicked
+
+//Compare the first and second number
+
+//Update the page - change the sign
+
+
+//---------------------------------------------
 //Event Handlers
 function compareNumbers() {
-	sign.textContent = "TGIF";
+	
+	var firstValue = firstNumber.value;
+	firstValue = parseInt(firstValue)
+
+	sign.textContent = "=";
 }

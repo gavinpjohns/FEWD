@@ -19,7 +19,22 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
+	padding: 20px 0px;
 
+}
+
+h3 {
+	font-size: 1em;
+	padding: 20px 0px;
+}
+
+post p {
+	padding: 20px 0px;
+}
+
+a {
+	font-size: 1 em;
+	padding: 10px 0px;
 }
 
 
