@@ -1,15 +1,53 @@
-/* =The style for the lab
--------------------------------------------------------------- */
+
+/* 
+   ///////////////////////////////////////////
+      FONT
+   ///////////////////////////////////////////
+*/
+
+@font-face {
+    font-family: 'artifakt_elementmedium';
+    src: url('../font/artifakt_element_medium-webfont.woff2') format('woff2'),
+         url('../font/artifakt_element_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'artifakt_elementregular';
+    src: url('../font/artifakt_element_regular-webfont.woff2') format('woff2'),
+         url('../font/artifakt_element_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* 
+   ///////////////////////////////////////////
+      LAYOUT
+   ///////////////////////////////////////////
+*/
+
+
+#wrapper {
+    background-color: #F4F5F6;
+}
+
 
 #sidebar {
     width:300px;
     float:left;
+    
 }
 
 #content {
     max-width:724px;
     float:right;
     padding-left:24px;
+
+
+
 }
 
 /* 
@@ -17,17 +55,25 @@
       NAVIGATION
    ///////////////////////////////////////////
 */
+
+
+
+main {
+    font-family: 'artifakt_elementregular';
+    background-color: #F4F5F6;
+}
+
+
 nav {
     width:300px;
-    background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
     padding:0 12px;
+    background-color: #FFF
 }
 
 nav.ul {
     width:300px;
-    background: #FFFFFF;
     border: 1px solid #979797;
     box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
     padding:0 12px;
@@ -42,6 +88,7 @@ nav.stick {
 
 .title {
     font-size: 1.5em;
+
 }
 
 img {
@@ -49,16 +96,21 @@ img {
     padding-top: 50px;
 }
 
-img.link {
+.link {
     padding: 0px;
     padding-top: 30px;
 
+}
+
+.banner {
+    padding: 0px;
 }
 
 nav ul {
     list-style-type:none;
     margin:0;
     padding:0;
+    font-family: 'artifakt_elementregular';
 }
 
 
@@ -67,14 +119,15 @@ nav li {
 }
 
 nav li a {
-    color: #9B9B9B;
-    font-weight:400;
+    color: #666;
     line-height: 4.5em;
+    font-family: 'artifakt_elementregular';
+
 }
 
 a.nav-active {
-    color:#4A4A4A;
-    font-weight: 800;
+    color:#222;
+    font-family: 'artifakt_elementmedium'
 }
 
 
@@ -84,7 +137,7 @@ a.nav-active {
       HEXAGON
    ///////////////////////////////////////////
 */
-
+/*
 
 hr {
     border:none;

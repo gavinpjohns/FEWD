@@ -57,21 +57,7 @@ a img {
             box-sizing: border-box;
 }
 
-body {
-    background-color:rgb(50,50,50);
-    color:rgb(150,150,150);
-    font-family: 'Quattrocento', serif;
-    font-size:16px;
-    line-height:1.5;   
-}
 
-input,
-label,
-textarea {
-    color:rgb(150,150,150);
-    font-family: 'Quattrocento', serif;
-    font-size:16px;
-}
 
 
 /* Headings */
@@ -85,7 +71,7 @@ a {
 }
 
 a:hover {
-    color:rgb(100,150,200);
+    color:#222;
 }
 
 
@@ -98,7 +84,7 @@ a:hover {
 }
 
 #main {
-    background-color:#fff;
+    background-color: #F4F5F6;
 }
 
 .container {
