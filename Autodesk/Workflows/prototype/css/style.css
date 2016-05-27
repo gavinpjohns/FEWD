@@ -1,0 +1,132 @@
+/* =The style for the lab
+-------------------------------------------------------------- */
+
+#sidebar {
+    width:300px;
+    float:left;
+}
+
+#content {
+    max-width:724px;
+    float:right;
+    padding-left:24px;
+}
+
+/* 
+   ///////////////////////////////////////////
+      NAVIGATION
+   ///////////////////////////////////////////
+*/
+nav {
+    width:300px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
+    padding:0 12px;
+}
+
+nav.ul {
+    width:300px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
+    padding:0 12px;
+}
+
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:30px;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+img.link {
+    padding: 0px;
+    padding-top: 30px;
+
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+
+nav li {
+
+}
+
+nav li a {
+    color: #9B9B9B;
+    font-weight:400;
+    line-height: 4.5em;
+}
+
+a.nav-active {
+    color:#4A4A4A;
+    font-weight: 800;
+}
+
+
+
+/* 
+   ///////////////////////////////////////////
+      HEXAGON
+   ///////////////////////////////////////////
+*/
+
+
+hr {
+    border:none;
+    background-color:rgb(220,220,220);
+    height:12px;
+    margin-bottom:18px;
+}
+
+
+.hexagon {
+  position: relative;
+  width: 30px; 
+  height: 17.32px;
+  background-color: #ffffff;
+  margin: 8.66px 0;
+  border-left: solid 1px #a2a2a3;
+  border-right: solid 1px #a2a2a3;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 21.21px;
+  height: 21.21px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 3.3934px;
+}
+
+.hexagon:before {
+  top: -10.6066px;
+  border-top: solid 1.4142px #a2a2a3;
+  border-right: solid 1.4142px #a2a2a3;
+}
+
+.hexagon:after {
+  bottom: -10.6066px;
+  border-bottom: solid 1.4142px #9B9B9B;
+  border-left: solid 1.4142px #9B9B9B;
+}
+
