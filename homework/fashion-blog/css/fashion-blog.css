@@ -6,9 +6,16 @@
    ///////////////////////////////////////////
 */
 
+body {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+
 h1 {
 	color: red
 	font-size: 2em;
+	padding: 0 20px 0 0;
+	
 }
 
 .subtitle {
@@ -20,21 +27,35 @@ h1 {
 h2 {
 	font-size: 1.5em;
 	padding: 20px 0px;
+	
 
 }
 
 h3 {
 	font-size: 1em;
 	padding: 20px 0px;
+	
 }
 
-post p {
+.date {
+	font-size: 2em;
+	color: grey;
+}
+
+.post {
+	line-height: 1.4em;
+	
+}
+
+.link {
+	text-align: right;
 	padding: 20px 0px;
+	color: red;
 }
 
 a {
 	font-size: 1 em;
-	padding: 10px 0px;
+	
 }
 
 
@@ -61,6 +82,7 @@ main {
 	align-content: center;
 }
 
+
 header h1{
 	display: inline;
 }
@@ -74,6 +96,14 @@ header ul li {
 	flex: 1;
 	text-align: center;
 	justify-content: space-between;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border: solid white 1px;
+}
+
+header ul li:hover {
+	background-color: red;
 }
 
 
@@ -105,11 +135,13 @@ aside {
 	padding: 40px;
 	flex: 1;
 	display: block;
+	line-height: 1.4em;
 }
 
 img {
 	width: 100%;
 	position: relative;
+	padding-bottom: 20px;
 }
 
 .ad {
@@ -120,6 +152,11 @@ img {
 	justify-content: space-between;
 	padding: 80px;
 
+}
+
+.popular {
+	color: red;
+	list-style-type: disc;
 }
 
 
