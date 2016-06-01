@@ -29,7 +29,7 @@ console.log("f:",f);
 var c = (f-32)*5/9;
 
 //update the page
-fahrenheit.value = c
+fahrenheit.value = c 
 
 
 }
