@@ -1,8 +1,29 @@
+//structure
+//----------------------------------
 var parent = document.querySelector(".sponsored-articles");
 
-var child = document.createElement("li");
 
-parent.appendChild(child);
+//event handler
+//----------------------------------
 
-child.textContent = "Boomshakalaka";
+
+
+//update page
+//----------------------------------
+function createItem(){
+
+	//step 1: create
+	var child = document.createElement("li");
+
+	//step 2: add content and attributes
+	child.textContent = "Boomshakalaka";
+	child.classList.add("new");
+	child.setAttribute('src', 'img/logo.jpg');
+
+	// step 3: add to DOM tree
+	parent.appendChild(child);
+
+}
+
+
 

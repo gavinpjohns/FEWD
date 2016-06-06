@@ -14,7 +14,13 @@ body {
 	width: 100%;
 }
 
-.
+.new { 
+	text-decoration: none;
+	font-family: courier,georgia,"times new roman",times,serif;
+	
+
+}
+
 
 ul {
 list-style: none;

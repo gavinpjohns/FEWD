@@ -7,11 +7,14 @@ console.log("js loaded up");
 //Structure
 //--------------------------------------------
 var fahrenheit = document.querySelector(".fahrenheit");
-var convert = document.querySelector(".convert");
+var celcius = document.querySelector(".celcius");
+var convertFahrenheit = document.querySelector(".convert-fahrenheit");
+var convertCelsius = document.querySelector(".convert-celsius");
 
 //Events
 //--------------------------------------------
-convert.addEventListener("click", fahrenheitToCelcius);
+convertFahrenheit.addEventListener("click", fahrenheitToCelcius);
+convertCelsius.addEventListener("click", CelciusToFahrenheit);
 
 
 //Event Handler
@@ -19,19 +22,29 @@ convert.addEventListener("click", fahrenheitToCelcius);
 function fahrenheitToCelcius() {
 	console.log("fn fahrenheitToCelcius")
 
-//get data from page
+	//get data from page
 
-var f = parseInt(fahrenheit.value);
-console.log("f:",f);
+	var f = parseInt(fahrenheit.value);
+	console.log("f:",f);
 
 
-//do some work / processing
-var c = (f-32)*5/9;
+	//do some work / processing
+	var c = (f-32)*5/9;
 
-//update the page
-fahrenheit.value = c 
-
+	//update the page
+	celcius.value = c 
 
 }
 
 
+function CelciusToFahrenheit() {
+	console.log("fn CelciusToFahrenheit")
+
+	var c = parseInt(celcius.value);
+	console.log("c:",c);
+
+	var f = (c*1.8)+32;
+
+	fahrenheit.value = f 
+
+}

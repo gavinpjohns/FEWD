@@ -1,0 +1,46 @@
+/* 
+   ///////////////////////////////////////////
+      FONT & COLOR 
+   ///////////////////////////////////////////
+*/
+
+html {
+	height: 100%;
+}
+
+body {
+
+	height: 100%;
+	font-family: Inconsolata;
+	margin: 20px;
+}
+
+
+button,
+input {
+	font-family: Inconsolata;
+	padding: 5px;
+	height: 30px;
+	border: 1px solid #292929;
+	background: none;
+	cursor: pointer;
+}
+
+input:hover {
+	cursor: text;
+}
+
+button:hover {
+	box-shadow:  0 0 2px 
+}
+
+
+
+.directions {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.directions li{
+	margin-top: 10px;
+}

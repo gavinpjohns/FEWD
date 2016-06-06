@@ -31,20 +31,20 @@
 
 
 #wrapper {
-    background-color: #F4F5F6;
+    background-color: #f5f5f5;
 }
 
 
 #sidebar {
     width:300px;
     float:left;
+
     
 }
 
 #content {
     max-width:724px;
     float:right;
-    padding-left:24px;
 
 
 
@@ -60,23 +60,20 @@
 
 main {
     font-family: 'artifakt_elementregular';
-    background-color: #F4F5F6;
+    background-color: #f5f5f5;
 }
 
 
 nav {
     width:300px;
-    border: 1px solid #979797;
-    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
-    padding:0 12px;
-    background-color: #FFF
+    border-right: 1px solid #bbbbbb;
+    padding-left: 30px;
+
 }
 
 nav.ul {
-    width:300px;
-    border: 1px solid #979797;
-    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.17);;
-    padding:0 12px;
+
+
 }
 
 nav.stick {
@@ -104,6 +101,7 @@ img {
 
 .banner {
     padding: 0px;
+    
 }
 
 nav ul {
@@ -120,7 +118,7 @@ nav li {
 
 nav li a {
     color: #666;
-    line-height: 4.5em;
+    line-height: 3.5em;
     font-family: 'artifakt_elementregular';
 
 }

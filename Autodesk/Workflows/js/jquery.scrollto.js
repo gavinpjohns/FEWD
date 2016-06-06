@@ -22,6 +22,7 @@ $.scrollTo = $.fn.scrollTo = function(x, y, options){
         }
     }, options);
 
+
     return this.each(function(){
         var elem = $(this);
         elem.stop().animate({

@@ -19,6 +19,15 @@ h1 {
 	
 }
 
+p {
+
+	font-family: 'Inconsolata';
+	padding-top: 20px;
+	margin-bottom: 0px;
+
+}
+
+
 .converter {
   	position: fixed;
   	top: 50%;
