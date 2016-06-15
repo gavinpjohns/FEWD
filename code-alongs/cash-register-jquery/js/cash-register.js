@@ -1,9 +1,9 @@
 // Structure
 // ------------------------------------------------
-var form    = document.querySelector("form");
-var input   = document.querySelector("input");
-var entries = document.querySelector(".entries");
-var total   = document.querySelector(".total");
+var form    = jQuery("form");
+var input   = jQuery("input");
+var entries = jQuery(".entries");
+var total   = jQuery(".total");
 
 
 // Setup
@@ -12,11 +12,11 @@ var totalValue = 0;
 var receipt = {
 	lineItems: [],
 };
-kb
+
 
 // Events
 // ------------------------------------------------
-form.addEventListener("submit", enter);
+form.on("submit", enter);
 
 
 
@@ -26,13 +26,13 @@ function enter(event) {
 	event.preventDefault();
 
 	// get the current entry value, convert to number with parseFloat
-	var entry = parseFloat(input.value);
+	var entry = parseFloat(input.val());
 	receipt.lineItems.push(entry);
 
 	createReceipt();
 
 	// clean up!
-	input.value = "";
+	input.value("");
 
 	//clean up receipt
 	
@@ -45,17 +45,18 @@ function createReceipt() {
 
 function createLineItem(cost) {
 	// 1. create and append the new list item
-	var li = document.createElement("li");
+	var li = jQuery('<li></li>');
+	// 3. append new element to parent
+	entries.append(li);
 
 	// 2. add text content & attributes
-	li.textContent = formatCurrency(cost);
+	li.text(formatCurrency(cost));
 	
-	// 3. append new element to parent
-	entries.appendChild(li);
+
 
 	// update the value for the total
 	totalValue = totalValue + cost;
-	total.textContent = formatCurrency(totalValue);
+	total.text(formatCurrency(totalValue));
 }
 
 
