@@ -9,10 +9,16 @@ var textTheme = document.querySelector(".text-theme")
 ul.addEventListener('click', changeTheme);
 
 //on page load, get the theme from localStorage
-window.addEventListener('load', updatePage);
+window.addEventListener('load', reloadPage);
 
 //Event handler functions
 //-----------------------------------------------
+function reloadPage(e) {
+	//on page load get theme from localStorage
+	var theme = localStorage.getItem("theme");
+	updatePage(theme);
+}
+
 function changeTheme(e) {
 	console.log(e.target, e.type);
 
@@ -21,18 +27,15 @@ function changeTheme(e) {
 		return;
 	}
 
-	body.className = e.target.className;
-	textTheme.textContent = e.target.className;
+	updatePage(e.target.className);
 
 	//save theme to localStorage
 	localStorage.setItem("theme", e.target.className);
 }
 
-//get theme from localStorage
-//eg red
-var theme = localStorage.getItem("theme")
+//update the page
 
-function updatePage() {
+function updatePage(theme) {
 	body.className = theme;
 	textTheme.textContent = theme;
 }
