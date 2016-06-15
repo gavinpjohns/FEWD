@@ -1,9 +1,9 @@
 // setup
 
-var events;
-var addButton;
-var taskField;
-var dateField;
+
+var taskField = document.querySelector(".task-field");
+var dateField = document.querySelector(".date-field");
+var addButton = document.querySelector("button");
 
 function init() {
 	events = document.querySelector("ol");
@@ -12,10 +12,6 @@ function init() {
 		var check = event.children[0];
 		check.addEventListener("click", onCheckboxClicked);
 	}
-
-	taskField = document.querySelector(".task-field");
-	dateField = document.querySelector(".date-field");
-	addButton = document.querySelector("button");
 
 	addButton.addEventListener("click", onAddClicked);
 }
@@ -59,6 +55,9 @@ function addEvent() {
 		newLi.children[0].addEventListener("click", onCheckboxClicked);
 		events.appendChild(newLi);
 
-		
+		taskField.value = "";
+		dateField.value = "";
+	} 
 }
 
+// utility functions

@@ -18,7 +18,7 @@ main {
 /*header*/
 
 header {
-	background: #73C66F;
+	background: #73C;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 /*font styles*/
 
 body {
-	font-family: Avenir, sans-serif;
+	font-family: Courier, sans-serif;
 }
 
 /*form*/
