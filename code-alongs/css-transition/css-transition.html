@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Transition</title>
+
+  <!--
+       ///////////////////////////////////////////
+          CSS 
+       ///////////////////////////////////////////
+   -->
+
+<style type="text/css">
+	
+	div {
+		transition-property: all;
+		transition-duration: .3s;
+		transition-timing-function: easeInOutElastic;
+	}
+
+	.square {
+		width: 100px;
+		height: 100px;
+		background: #936C71;
+		cursor: pointer;
+	}
+
+	.circle {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background: #F97D53;
+		cursor: pointer;
+	}
+
+	.circle.square {
+		border-radius: 0;
+		padding-left: 75%;
+	}
+
+	.green {
+		background: #55A04D;
+		margin-left: 75%;
+	}
+
+	.lightgreen {
+		background: #9DC67E;
+
+	}
+
+	section {
+		line-height: 50px;
+		width: 100px;
+		background: #C6907E;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.close {
+		transform: translateY(-150%);
+	}
+
+	.container {
+		overflow: hidden;
+	}
+
+	.spin {
+		transform: rotate(1440deg);
+	}
+
+	.wheel {
+		transition: all;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: #9DC67E;
+
+	}
+	
+</style>
+</head>
+<body>
+  <!--
+       ///////////////////////////////////////////
+          HTML 
+       ///////////////////////////////////////////
+   -->
+
+<div class="square"></div>
+<div class="circle"></div>
+<section class="blog-tab">Blog</section>
+	<div class="container">
+		<div class="blog-content">
+			<p>
+				Stick butt in face i am the best where is my slave? I'm getting hungry. Lick butt and make a weird face find empty spot in cupboard and sleep all day russian blue so throwup on your pillow poop on grasses or give attitude. Sit in box. Love to play with owner's hair tie missing until dinner time sleep on keyboard. Meowwww thinking longingly about tuna brine but chase after silly colored fish toys around the house and fall asleep on the washing machine meowing non stop for food toy mouse squeak roll over sniff other cat's butt and hang jaw half open thereafter. Meow for food, then when human fills food dish, take a few bites of food and continue meowing meow all night having their mate disturbing sleeping humans brown cats with pink ears poop on grasses pelt around the house and up and down stairs chasing phantoms. Eat grass, throw it back up fall over dead (not really but gets sypathy) leave fur on owners clothes scratch leg; meow for can opener to feed me, yet lounge in doorway so hiss at vacuum cleaner.
+			</p>
+		</div>
+	</div>
+  <!--
+       ///////////////////////////////////////////
+          JS 
+       ///////////////////////////////////////////
+   -->
+
+<script>
+var square = document.querySelector('.square');
+var circle = document.querySelector('.circle');
+var blogTab = document.querySelector('.blog-tab');
+var blogContent = document.querySelector('.blog-content');
+
+square.addEventListener('click',roundIt);
+circle.addEventListener('click',squareIt);
+blogTab.addEventListener('click', showBlogTab);
+
+function showBlogTab() {
+	blogContent.classList.toggle('close');
+}
+
+function roundIt() {
+	console.log('roundIt');
+	square.classList.toggle('green')
+}
+
+
+function squareIt() {
+	console.log('squareIt');
+	circle.classList.toggle('lightgreen');
+	circle.classList.toggle('square');
+}
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
