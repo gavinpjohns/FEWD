@@ -17,11 +17,27 @@
 	}
 
 	.bouncing {
-		animation: bouncing 1s infinite alternate;
+		animation: bouncing .2s infinite alternate;
 	}
+
+	@keyframes bouncing {
+		from {transform: translateY(0) scaleY(0.8);
+		;
+		}
+		to {transform: translateY(-100px) scaleY(1);}
+	}
+
 </style>
 
+<script>
+	var ball = document.querySelector('.ball');
+	ball.addEventListener('click', bounce);
+	function bounce(e) {
 
+	ball.classList.toggle('bouncing');
+	}
+
+</script>
 
 
 
