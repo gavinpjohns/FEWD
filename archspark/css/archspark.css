@@ -1,0 +1,427 @@
+
+
+
+/* 
+   ///////////////////////////////////////////
+      FONT 
+   ///////////////////////////////////////////
+*/
+
+@import url("../fonts/monosten.css");
+h1, h2 {
+	font-family: Monosten-E;
+	font-size: 25.79px;
+	color: #262626;
+}
+
+p, h3 {
+	font-family: Roboto-Light;
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 23px;
+
+}
+
+h3 .title {
+	display: flex;
+	font-family: Roboto-Medium;
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 17px;
+	margin-left: 20px;
+	margin-top: 20px;	
+}
+
+
+
+/* 
+   ///////////////////////////////////////////
+      NAVBAR 
+   ///////////////////////////////////////////
+*/
+
+nav {
+	position: fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	background: #fff;
+	height: 80px;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24), 0px 0px 2px 0px rgba(0,0,0,0.12);
+}
+
+nav .container {
+	width: 1000px;
+	height: 80px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .nav-icons {
+	display: flex;
+}
+
+nav .nav-icons li {
+	padding-left: 20px;
+
+}
+
+
+
+/* 
+   ///////////////////////////////////////////
+      DROPDOWN 
+   ///////////////////////////////////////////
+*/
+
+.dropdown {
+	width: 420px;
+	overflow: scroll;
+	position: fixed;
+	top:80px;
+	bottom: 40px;
+	left: 150px;
+	z-index: 1;
+	background: #FFFFFF;
+	border: 0px solid #DBDBDB;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24), 0px 0px 2px 0px rgba(0,0,0,0.12);
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+}
+
+.dropdown li {
+	border: 0.5px solid transparent;
+	line-height: 75px;
+	padding-left: 60px;
+	padding-right: 60px;
+    display: inline-block;
+    vertical-align: middle;
+	display: flex;
+	cursor: pointer;	
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+}
+
+.dropdown li:hover {
+	border-color: #DBDBDB;
+}
+
+.dropdown li h1 {
+	color: #7A7A7C;
+}
+
+.dropdown li:hover h1{
+	color: #262626;
+}
+
+.dropdown .logo{
+	width: 42px;
+	height: 42px;
+	position: absolute;
+    right: 60px;
+}
+
+.dropdown-close {
+		transform: translateY(-1300px);
+}
+
+.dropdown-trigger {
+	display: flex;
+	cursor: pointer;
+}
+
+
+
+
+/* 
+   ///////////////////////////////////////////
+      DROPDOWN & MENU OPEN STATE 
+   ///////////////////////////////////////////
+*/
+
+body.dropdown-overlay-open {
+	overflow: hidden;
+}
+
+body.dropdown-overlay-open main {
+	-webkit-filter: blur(10px) opacity(.5);
+	filter: blur(10px) opacity(.5);
+	pointer-events: none;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+
+}
+
+body.menu-overlay-open main,
+body.menu-overlay-open nav {
+	overflow: hidden;
+	-webkit-filter: blur(10px) opacity(.5);
+	filter: blur(10px) opacity(.5);
+	pointer-events: none;
+	z-index: 3;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+}
+
+
+
+
+/* 
+   ///////////////////////////////////////////
+      SEARCH 
+   ///////////////////////////////////////////
+*/
+
+
+
+/* 
+   ///////////////////////////////////////////
+      MENU 
+   ///////////////////////////////////////////
+*/
+.menu {
+	height: 100%;
+	width: 520px;
+	overflow: scroll;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	z-index: 3;
+	background: #FFFFFF;
+	border: 0px solid #DBDBDB;
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24), 0px 0px 2px 0px rgba(0,0,0,0.12);	
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+}
+
+.menu li {
+	line-height: 80px;
+	padding-left: 120px;
+	padding-right: 60px;
+    display: inline-block;
+    vertical-align: middle;
+	display: flex;
+	cursor: pointer;
+	border: 0.5px solid transparent;
+}
+
+.menu  li:hover {	
+	border-color: #DBDBDB;
+}
+
+.menu li h1 {
+	color: #7A7A7C;
+}
+
+.menu li:hover h1{
+	color: #262626;
+}
+
+
+.menu .icons {
+	width: 42px;
+	height: 42px;
+	position: absolute;
+    left: 60px;
+}
+
+.menu-close {
+		transform: translateX(520px);
+		transition-property: all;
+		transition-duration: .3s;
+		transition-timing-function: easeInOutElastic;
+}
+
+.menu-trigger {
+	display: flex;
+	cursor: pointer;
+}
+
+/* 
+   ///////////////////////////////////////////
+      GALLERY 
+   ///////////////////////////////////////////
+*/
+
+
+main {
+	margin: 20px 0;
+	padding-top: 100px;
+	background: #F9F9F9;
+
+}
+main ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+main li {
+	width: 320px;
+	height: 320px;
+	margin: 5px;
+	position: relative;
+}
+
+
+.gallery .image {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	display: block;
+
+}
+
+.card {
+	width: 320px;
+	height: 320px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0.5px solid #999999;
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.card:hover {
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+	background: rgba(255,255,255,0.90);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24), 0px 0px 2px 0px rgba(0,0,0,0.12);
+	cursor: pointer;
+}
+
+.card .card-header {
+	display: flex;
+}
+
+.card .card-title {
+	padding-left: 20px;
+	padding-bottom: 20px;
+	flex: 1;
+}
+
+.card .logo {
+	border-radius: 50%;
+	background: #FFFFFF;
+	border: 0.5px solid #999999;
+	width: 42px;
+	height: 42px;
+}
+
+.card .title {		
+	
+}
+
+.card .date {
+}
+
+.card .summary {	
+	margin-bottom: 15px;
+	border-bottom: 0.25px solid #999999;
+
+}
+
+.card .card-footer {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+}
+
+.card .card-footer .heart {
+	margin-right: 20px;
+}
+
+.card .card-footer .share {
+
+
+}
+
+
+
+/* 
+   ///////////////////////////////////////////
+      MOBILE 
+   ///////////////////////////////////////////
+*/
+
+@media (min-width: 2300px){
+	nav .container {
+		width: 2300px;
+	}
+}
+
+@media (min-width: 1970px) and (max-width: 2300px){
+	nav .container {
+		width: 1970px;
+
+	}
+}
+
+@media (min-width: 1640px) and (max-width: 1970px){
+	nav .container {
+		width: 1640px;
+
+	}
+}
+
+@media (min-width: 1310px) and (max-width: 1640px){
+	nav .container {
+		width: 1310px;
+
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1310px){
+	nav .container {
+		width: 980px;
+
+	}
+}
+
+@media (min-width: 650px) and (max-width: 980px){
+	nav .container {
+		width: 650px;
+
+	}
+}
+
+@media (min-width: 0px) and (max-width: 650px){
+	nav .container {
+		width: 330px;
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -40,5 +40,13 @@
 </footer>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+<script type="text/javascript">
+	var image = document.querySelector ("img");
+	TweenMax.staggerFrom("*", 1.5, {y:200, ease:Bounce.easeOut, cycle:{rotation:[10, -10, -50, 100]}},
+		0.05);
+
+
+</script>
 
 
