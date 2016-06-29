@@ -1,0 +1,50 @@
+
+/* 
+   ///////////////////////////////////////////
+      FONT 
+   ///////////////////////////////////////////
+*/
+
+@import url("../fonts/monosten.css");
+h1, h2 {
+	font-family: Monosten-E;
+	font-size: 25.79px;
+	color: #262626;
+
+}
+
+p, h3, a {
+	font-family: Roboto-Light;
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 23px;
+
+}
+
+h3 .title {
+	display: flex;
+	font-family: Roboto-Medium;
+	font-size: 14px;
+	color: #4A4A4A;
+	line-height: 17px;
+	margin-left: 20px;
+	margin-top: 20px;	
+}
+
+body {
+	margin: 30px;
+	background: #EED2EB;
+}
+
+input {
+	margin:  20px 0;
+	font-family: Monosten-E;
+	font-size: 25.79px;
+	color: #262626;
+}
+
+
+.results li {
+	padding: 15px;
+	border-bottom: 1px solid grey;
+}

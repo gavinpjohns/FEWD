@@ -124,7 +124,8 @@ nav .nav-icons li {
 	height: 42px;
 	position: absolute;
     right: 60px;
-}
+	margin-top: 16px;
+	}
 
 .dropdown-close {
 		transform: translateY(-1300px);
@@ -231,6 +232,7 @@ body.menu-overlay-open nav {
 	height: 42px;
 	position: absolute;
     left: 60px;
+    margin-top: 16px;
 }
 
 .menu-close {
@@ -281,6 +283,7 @@ main li {
 }
 
 .card {
+	opacity: 0;
 	width: 320px;
 	height: 320px;
 	position: absolute;
@@ -288,13 +291,14 @@ main li {
 	left: 0;
 	border: 0.5px solid #999999;
 	border-radius: 2px;
-	padding: 20px;
-}
-
-.card:hover {
+	padding: 20px;	
 	transition-property: all;
 	transition-duration: .3s;
 	transition-timing-function: easeInOutElastic;
+}
+
+li:hover .card {
+	opacity: 1;
 	background: rgba(255,255,255,0.90);
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24), 0px 0px 2px 0px rgba(0,0,0,0.12);
 	cursor: pointer;
@@ -303,7 +307,6 @@ main li {
 .card .card-header {
 	display: flex;
 }
-
 .card .card-title {
 	padding-left: 20px;
 	padding-bottom: 20px;
