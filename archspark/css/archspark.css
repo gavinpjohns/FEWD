@@ -144,8 +144,14 @@ nav .nav-icons li {
       DROPDOWN & MENU OPEN STATE 
    ///////////////////////////////////////////
 */
-
-body.dropdown-overlay-open {
+body main,
+body nav {
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
+}
+body.dropdown-overlay-open,
+body.menu-overlay-open {
 	overflow: hidden;
 }
 
@@ -153,25 +159,22 @@ body.dropdown-overlay-open main {
 	-webkit-filter: blur(10px) opacity(.5);
 	filter: blur(10px) opacity(.5);
 	pointer-events: none;
-	transition-property: all;
-	transition-duration: .3s;
-	transition-timing-function: easeInOutElastic;
-
 }
 
-body.menu-overlay-open main,
-body.menu-overlay-open nav {
-	overflow: hidden;
+body.menu-overlay-open main {
 	-webkit-filter: blur(10px) opacity(.5);
 	filter: blur(10px) opacity(.5);
 	pointer-events: none;
 	z-index: 3;
-	transition-property: all;
-	transition-duration: .3s;
-	transition-timing-function: easeInOutElastic;
 }
 
 
+body.menu-overlay-open nav {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	pointer-events: none;
+	z-index: 3;
+}
 
 
 /* 
