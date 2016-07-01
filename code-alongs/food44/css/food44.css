@@ -32,12 +32,15 @@ h3 .title {
 }
 
 body {
-	margin: 30px;
+	margin: 20px;
 	background: #EED2EB;
 }
 
 input {
 	margin:  20px 0;
+	padding-left: 15px;
+	width: 100%;
+	height: 50px;
 	font-family: Monosten-E;
 	font-size: 25.79px;
 	color: #262626;

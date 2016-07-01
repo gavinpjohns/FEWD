@@ -8,7 +8,7 @@
 */
 
 @import url("../fonts/monosten.css");
-h1, h2 {
+h1, h2, .current-resource-name {
 	font-family: Monosten-E;
 	font-size: 25.79px;
 	color: #262626;
@@ -140,6 +140,8 @@ nav .nav-icons li {
 	display: inline-flex;
     align-items: center;
 }
+
+
 
 .dropdown-trigger .logo {
 	width: 42px;
@@ -417,6 +419,7 @@ li:hover .card {
 	nav .container {
 		width: 330px;
 	}
+	.dropdown-trigger h1,
 	.dropdown-trigger .current-resource-name {
 	display: none;
 	}

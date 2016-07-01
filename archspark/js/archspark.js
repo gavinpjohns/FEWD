@@ -61,7 +61,7 @@ function refreshDropdown(resourceId){
 	for (var i = 0; i < archspark.resources.length; i++) {
 		if (archspark.resources[i].id == resourceId) {
 			currentResource.innerHTML = 
-				 '<span class="current-resource-name">'+ archspark.resources[i].name + '</span>' + 
+				'<span class="current-resource-name">'+ archspark.resources[i].name + '</span>' + 
 				'<img src="' + archspark.resources[i].logo + '" class="logo">';
 		}
 	}
