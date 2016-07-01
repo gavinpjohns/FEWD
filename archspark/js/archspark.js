@@ -4,6 +4,7 @@ var body = document.querySelector('body');
 var gallery = document.querySelector(".gallery");
 var dropdown = document.querySelector('.dropdown');
 var dropdownTrigger = document.querySelector('.dropdown-trigger');
+var currentResource = document.querySelector('.current-resource');
 var menu = document.querySelector('.menu');
 var menuTrigger = document.querySelector('.menu-trigger');
 
@@ -30,7 +31,7 @@ menuTrigger.addEventListener('click', showMenu);
 //rebuild the todo list with page is reloaded
 function reloadPage(e) {
 	refreshGallery("archdaily");
-	refreshDropdown();
+	refreshDropdown("archdaily");
 }
 
 
@@ -50,11 +51,20 @@ function refreshGallery(id){
 }
 
 //creates entire todo list from json data
-function refreshDropdown(){
+function refreshDropdown(resourceId){
 	//clears out the list
 	dropdown.innerHTML = "";
 	//adds one new task for each item in the array
 	archspark.resources.forEach(createResource);
+	
+	//for loop to match id with name
+	for (var i = 0; i < archspark.resources.length; i++) {
+		if (archspark.resources[i].id == resourceId) {
+			currentResource.innerHTML = 
+				 '<span class="current-resource-name">'+ archspark.resources[i].name + '</span>' + 
+				'<img src="' + archspark.resources[i].logo + '" class="logo">';
+		}
+	}
 }
 
 
@@ -73,7 +83,9 @@ function clickDropdown(e){
 	var resourceId = target.getAttribute("id");
 	console.log(resourceId);
 	refreshGallery(resourceId);
+	refreshDropdown(resourceId);
 
+	
 	dropdown.classList.toggle('dropdown-close');
 	body.classList.toggle('dropdown-overlay-open');
 }
