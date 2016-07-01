@@ -141,8 +141,6 @@ nav .nav-icons li {
     align-items: center;
 }
 
-
-
 .dropdown-trigger .logo {
 	width: 42px;
 	height: 42px;
@@ -227,6 +225,9 @@ body.menu-overlay-open nav {
 	display: flex;
 	cursor: pointer;
 	border: 0.5px solid transparent;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: easeInOutElastic;
 }
 
 .menu  li:hover {	
@@ -252,9 +253,6 @@ body.menu-overlay-open nav {
 
 .menu-close {
 		transform: translateX(520px);
-		transition-property: all;
-		transition-duration: .3s;
-		transition-timing-function: easeInOutElastic;
 }
 
 .menu-trigger {

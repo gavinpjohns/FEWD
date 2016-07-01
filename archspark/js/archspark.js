@@ -22,6 +22,7 @@ var todoList = {
 window.addEventListener("load", reloadPage);
 dropdownTrigger.addEventListener('click', showDropdown);
 menuTrigger.addEventListener('click', showMenu);
+menu.addEventListener('click', clickMenu);
 
 
 
@@ -92,7 +93,8 @@ function clickDropdown(e){
 
 //creates entire todo list from json data
 function clickMenu(e){
-	var target = e.target
+	console.log('clickMenu',e);
+	var target = e.target;
 
 	//error checking. return early if a li wasn't clicked
 	if (target.tagName != "LI") {
