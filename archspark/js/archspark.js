@@ -9,14 +9,6 @@ var menu = document.querySelector('.menu');
 var menuTrigger = document.querySelector('.menu-trigger');
 
 
-
-// Setup
-// ------------------------------------------------
-var todoList = {
-	tasks: []
-};
-
-
 // Events
 // ------------------------------------------------
 window.addEventListener("load", reloadPage);
@@ -39,7 +31,7 @@ function reloadPage(e) {
 // Update Page
 // ------------------------------------------------
 
-//creates entire todo list from json data
+//creates entire gallery from json data
 function refreshGallery(id){
 	//clears out the list
 	gallery.innerHTML = "";
@@ -51,7 +43,7 @@ function refreshGallery(id){
 	}
 }
 
-//creates entire todo list from json data
+//creates entire dropdown resources from json data
 function refreshDropdown(resourceId){
 	//clears out the list
 	dropdown.innerHTML = "";
