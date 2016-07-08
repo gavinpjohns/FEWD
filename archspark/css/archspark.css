@@ -1,5 +1,4 @@
 @import url("../fonts/monosten.css");
-@import url("../fonts/monostene.css");
 
 
 /* 
@@ -10,7 +9,7 @@
 
 
 h1, h2, .current-resource-name {
-	font-family: Monosten-E;
+	font-family: monostene;
 	font-size: 25.79px;
 	color: #262626;
 }
