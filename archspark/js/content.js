@@ -23,6 +23,7 @@ var archdaily = {
 
 var dezeen1 = {
 	resource: "dezeen",
+	logo: "img/resource-logos/dezeen.png",
 	image: "img/gallery/pic-1.png",
 	title: "Booya bitches",
 	date: "10 min ago",
@@ -30,6 +31,7 @@ var dezeen1 = {
 };
 var dezeen2 = {
 	resource: "dezeen",
+	logo: "img/resource-logos/dezeen.png",
 	image: "img/gallery/pic-2.png",
 	title: "Module Grid House / Tetsuo Yagasaki Architects ",
 	date: "10 min ago",
